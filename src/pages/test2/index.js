@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Table, Tag, Checkbox } from 'antd';
-import './index.css';
 
 function Test2() {
   const [loading, setLoading] = useState(false);
@@ -13,8 +12,7 @@ function Test2() {
       title: 'State',
       dataIndex: 'state',
       key: 'state',
-      className:"hideItem"
-      // showItem
+      className:"hideItem",
     },
     {
       title: 'City',
@@ -46,6 +44,8 @@ function Test2() {
       render: (text, record) => (<Tag color={record.tagColor}>{text}</Tag>)
     },
   ];
+
+  //隱藏功能還沒寫好
   const checkboxOption = [
     {
       label: 'State',
